@@ -1,0 +1,149 @@
+
+body, html{
+  background-color: #454a6a;
+  margin:0;
+  padding:0;
+  overflow-x: hidden; /*found this solution trying to troubleshoot, basically if I dont have this then the user can scroll to the right where there is no content and I cant figure out what was causing it*/
+}
+p {
+  font-family: 'andale mono', monospace;
+  color: white;
+  font-size: 1em;
+  margin: 25px 150px 75px;
+  line-height: 1.8;
+}
+h2 {
+  font-family: 'andale mono', monospace;
+  color: white;
+  font-size: 1.3em;
+  margin: 40px 150px;
+}
+h1 {
+  font-family: 'andale mono', monospace;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #1d2235;
+}
+li {
+  float: left;
+}
+li a{
+  font-family: 'andale mono', monospace;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #686f99;
+}
+
+footer{
+  background-color:#1d2235;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+    width: 100%;
+  font-family: 'andale mono', monospace;
+}
+
+
+
+figcaption{
+  font-family: 'andale mono', monospace;
+  color: white;
+  text-align: center;
+}
+
+/* Define the custom list style */
+.customListStyle {
+  list-style: none; /* remove default bullet point */
+  padding-left: 150;
+  overflow: hidden;
+  font-family: 'andale mono', monospace;
+  color: white;
+}
+.customListStyle li {
+
+  clear: left; /* clear float and start on new line */
+  margin-right: 10px; /* add some spacing between the items */
+}
+
+.imgSide {
+  display:inline-block;
+}
+.spacer {
+  height: 100px; /* just using this for blank space near the bottom of page */
+}
+
+
+
+.button {
+  display: inline-block; /* using inline block otherwise it takes up the whole width of the screen, which i dont really want*/
+  text-decoration: none;
+  background-color: #4fa4b8;
+  color: white;
+  padding: 40px 40px;
+  font-family: 'andale mono', monospace;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+.button:hover{
+  background-color: #ad2f45;
+}
+.container { /*wrapping the button that I made with a container that has text align will align the button to the center rather than the left*/
+  text-align: center;
+}
+
+
+
+
+.linkText:link {
+  text-decoration: none;
+  color:#de523e;
+}
+.linkText:visited {
+  text-decoration: none;
+  color:#a4c443;
+}
+.linkText:hover {
+  text-decoration: none;
+  color:#fea7a7;
+}
+.linkText:active{
+  text-decoration: none;
+  color:#f0b541;
+}
+
+
+
+
+.currentPage {
+  background-color: #a3a7c2;
+}
+/* I want this header on every page */
+.homeHeader {
+  text-align: center;
+  color: white;
+  font-size: 1.5em; /*I searched this up and it appears em is for scalable fonts, so my header will always have good scaling like this*/
+  /* allowing the image to scale nicely on all decives and adding darkness to the image to make the text more readable */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("headerImg.png");
+  height: auto;
+  padding: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
